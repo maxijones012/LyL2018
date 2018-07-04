@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="db\AccessDB.cs" />
+    <Compile Include="db\Model\AccessDB.cs" />
     <Compile Include="db\CommonObj.cs" />
     <Compile Include="db\IAccessDB.cs" />
     <Compile Include="db\Impl\DetalleOrden.cs" />
@@ -106,6 +106,18 @@
     <Compile Include="Formularios\DetalleOrdenFrm.Designer.cs">
       <DependentUpon>DetalleOrdenFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\EmpleadoBusqFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EmpleadoBusqFrm.designer.cs">
+      <DependentUpon>EmpleadoBusqFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EmpleadoResultsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EmpleadoResultsFrm.designer.cs">
+      <DependentUpon>EmpleadoResultsFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Empleado\EmpleadoAMFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +154,24 @@
     <Compile Include="Formularios\PrincipalFrm.Designer.cs">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ProveedorAMFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProveedorAMFrm.designer.cs">
+      <DependentUpon>ProveedorAMFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProveedorBusqFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProveedorBusqFrm.designer.cs">
+      <DependentUpon>ProveedorBusqFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProveedorResultsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProveedorResultsFrm.designer.cs">
+      <DependentUpon>ProveedorResultsFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\IFormGridReload.cs" />
@@ -163,6 +193,12 @@
     <EmbeddedResource Include="Formularios\DetalleOrdenFrm.resx">
       <DependentUpon>DetalleOrdenFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EmpleadoBusqFrm.resx">
+      <DependentUpon>EmpleadoBusqFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EmpleadoResultsFrm.resx">
+      <DependentUpon>EmpleadoResultsFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Empleado\EmpleadoAMFrm.resx">
       <DependentUpon>EmpleadoAMFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +216,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PrincipalFrm.resx">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProveedorAMFrm.resx">
+      <DependentUpon>ProveedorAMFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProveedorBusqFrm.resx">
+      <DependentUpon>ProveedorBusqFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProveedorResultsFrm.resx">
+      <DependentUpon>ProveedorResultsFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

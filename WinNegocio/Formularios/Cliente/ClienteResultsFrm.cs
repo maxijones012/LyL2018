@@ -124,7 +124,7 @@ namespace WinNegocio.Formularios
 
         private void gridClientes_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-
+             
         }
     }
 }

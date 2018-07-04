@@ -57,7 +57,7 @@ namespace LibNegocio.db
         private string[] list_values()
         {
             // "nombre", "apellido", "fecha_nac", "reporta_a", "extension"
-            string[] values = { 
+            string[] values = {                                
                                 (this.IsNew?"":_columns[1] + "=")+String.Format("'{0}'",this._nombre), //formato cadena ''
                                 (this.IsNew?"":_columns[2] + "=")+String.Format("'{0}'",this._apellido),//formato cadena ''
                                 (this.IsNew?"":_columns[3] + "=")+String.Format("'{0}'",this._fecha_nac.ToString("yyyy-MM-dd")), //formato cadena ''

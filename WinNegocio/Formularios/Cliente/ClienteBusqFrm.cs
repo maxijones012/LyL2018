@@ -75,5 +75,10 @@ namespace WinNegocio.Formularios
                 this.NombreCiaTxt.Focus();
             }
         }
+
+        private void CeulaRucTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

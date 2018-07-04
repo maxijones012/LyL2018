@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.GridCategoria = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CerrarBtn = new System.Windows.Forms.Button();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridCategoria)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,25 +39,18 @@
             this.GridCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridCategoria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre});
-            this.GridCategoria.Location = new System.Drawing.Point(12, 12);
+            this.GridCategoria.Location = new System.Drawing.Point(30, 12);
             this.GridCategoria.Name = "GridCategoria";
             this.GridCategoria.ReadOnly = true;
             this.GridCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GridCategoria.Size = new System.Drawing.Size(249, 216);
+            this.GridCategoria.Size = new System.Drawing.Size(277, 216);
             this.GridCategoria.TabIndex = 0;
             this.GridCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridCategoria_CellContentClick);
             this.GridCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridCategoria_CellDoubleClick);
             // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "NombreCategoria";
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
             // CerrarBtn
             // 
-            this.CerrarBtn.Location = new System.Drawing.Point(96, 234);
+            this.CerrarBtn.Location = new System.Drawing.Point(232, 241);
             this.CerrarBtn.Name = "CerrarBtn";
             this.CerrarBtn.Size = new System.Drawing.Size(75, 23);
             this.CerrarBtn.TabIndex = 1;
@@ -65,11 +58,19 @@
             this.CerrarBtn.UseVisualStyleBackColor = true;
             this.CerrarBtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Nombre
+            // 
+            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nombre.DataPropertyName = "NombreCategoria";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
             // CategoriaResultsFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 269);
+            this.ClientSize = new System.Drawing.Size(338, 276);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.GridCategoria);
             this.Name = "CategoriaResultsFrm";
@@ -82,7 +83,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView GridCategoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.Button CerrarBtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
     }
 }

@@ -90,7 +90,7 @@ namespace WinNegocio.Formularios
 
         private void modificacionToolStripMenuItem5_Click(object sender, EventArgs e)
         {
-            EmpleadoAMFrm frm = new EmpleadoAMFrm();
+            EmpleadoBusqFrm frm = new EmpleadoBusqFrm();
             frm.Show();
         }
 
@@ -104,6 +104,50 @@ namespace WinNegocio.Formularios
         {
             CategoriaBusqFrm frm = new CategoriaBusqFrm();
             frm.Show();
+        }
+
+        private void altaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProveedorAMFrm frm = new ProveedorAMFrm();
+            frm.NewProveedor(null);
+        }
+
+        private void modificacionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProveedorBusqFrm frm = new ProveedorBusqFrm();
+            frm.Show();
+
+        }
+
+        private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClientesResultsFrm frm = new ClientesResultsFrm();
+            frm.ResultadosCliente(null,null);
+           
+        }
+
+        private void listadoToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            EmpleadoResultsFrm frm = new EmpleadoResultsFrm();
+            frm.ResultadosEmpleado(0, null);
+        }
+
+        private void listadoToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void listadoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            CategoriaResultsFrm frm = new CategoriaResultsFrm();
+            frm.ResultadosCategoria("");
+
+        }
+
+        private void listadoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProveedorResultsFrm frm = new ProveedorResultsFrm();
+            frm.ResultadosProveedor(0, null);
         }
     }
 }
