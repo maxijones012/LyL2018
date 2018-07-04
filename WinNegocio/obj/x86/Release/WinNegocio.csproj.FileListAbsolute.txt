@@ -1,0 +1,52 @@
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.csprojResolveAssemblyReference.cache
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.Formularios.FormTestModel.resources
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.Formularios.PrincipalFrm.resources
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.Properties.Resources.resources
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.csproj.GenerateResource.Cache
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClienteBusqFrm.resources
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClienteAMFrm.resources
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClientesResultsFrm.resources
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\WinNegocio.exe.config
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\WinNegocio.exe
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\WinNegocio.pdb
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\Npgsql.dll
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\Mono.Security.dll
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\Npgsql.pdb
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\Npgsql.xml
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\de\Npgsql.resources.dll
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\es\Npgsql.resources.dll
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\fi\Npgsql.resources.dll
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\fr\Npgsql.resources.dll
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\ja\Npgsql.resources.dll
+C:\temp\c#\winNegocios\WinNegocio\bin\Release\zh-CN\Npgsql.resources.dll
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.exe
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.pdb
+C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.Formularios.OrdenAMFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\WinNegocio.exe.config
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.exe
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.pdb
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.DetalleOrdenFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.FormTestModel.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClienteBusqFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClienteAMFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClientesResultsFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.OrdenAMFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.PrincipalFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Properties.Resources.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.csproj.GenerateResource.Cache
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\WinNegocio.exe
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\WinNegocio.pdb
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\Npgsql.dll
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\Mono.Security.dll
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\Npgsql.pdb
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\Npgsql.xml
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\de\Npgsql.resources.dll
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\es\Npgsql.resources.dll
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\fi\Npgsql.resources.dll
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\fr\Npgsql.resources.dll
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\ja\Npgsql.resources.dll
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\bin\Release\zh-CN\Npgsql.resources.dll
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.EmpleadoAMFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ListadoOrden.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.CategoriaAMFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.csprojResolveAssemblyReference.cache
