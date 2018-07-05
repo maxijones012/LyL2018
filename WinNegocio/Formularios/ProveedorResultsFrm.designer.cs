@@ -49,6 +49,7 @@
             this.gridProveedor.Size = new System.Drawing.Size(485, 190);
             this.gridProveedor.TabIndex = 0;
             this.gridProveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.gridProveedor.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // IdProveedor
             // 

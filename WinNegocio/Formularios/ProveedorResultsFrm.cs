@@ -61,13 +61,7 @@ namespace WinNegocio.Formularios
         }
         private void gridClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var grid = (DataGridView)sender;
 
-            if (grid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
-            {
-                ProveedorAMFrm frm = new ProveedorAMFrm();
-                frm.ShowProveedor(grid.Rows[e.RowIndex].DataBoundItem as Proveedor, this);
-            }
         }
 
         private void gridProveedor_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
@@ -110,7 +104,11 @@ namespace WinNegocio.Formularios
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            {
+                ProveedorAMFrm frm = new ProveedorAMFrm();
 
+                frm.ShowProveedor((this.gridProveedor.Rows[e.RowIndex].DataBoundItem as Proveedor), this);
+            }
         }
 
         private void ProveedorResultsFrm_Load_1(object sender, EventArgs e)
