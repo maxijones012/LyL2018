@@ -42,6 +42,7 @@
             this.celular = new System.Windows.Forms.TextBox();
             this.contacto = new System.Windows.Forms.TextBox();
             this.nombre = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // AceptarBtn
@@ -62,6 +63,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // contextMenuStrip1
             // 
@@ -74,9 +76,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(27, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 13);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Id";
+            this.label1.Text = "Ident. Proveedor";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -84,9 +86,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(27, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "contacto";
+            this.label2.Text = "Contacto";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -96,25 +98,25 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "nombre_proveedor";
+            this.label3.Text = "Nombre Proveedor";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(27, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 13);
+            this.label4.Size = new System.Drawing.Size(91, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "celular_proveedor";
+            this.label4.Text = "Celular Proveedor";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 146);
+            this.label5.Location = new System.Drawing.Point(12, 153);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 13);
+            this.label5.Size = new System.Drawing.Size(105, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "fijo_proveedor";
+            this.label5.Text = "Telef. Fijo Proveedor";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // id
@@ -122,7 +124,7 @@
             this.id.Enabled = false;
             this.id.Location = new System.Drawing.Point(124, 26);
             this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(100, 20);
+            this.id.Size = new System.Drawing.Size(115, 20);
             this.id.TabIndex = 9;
             this.id.TextChanged += new System.EventHandler(this.id_TextChanged);
             // 
@@ -130,7 +132,7 @@
             // 
             this.fijo.Location = new System.Drawing.Point(124, 146);
             this.fijo.Name = "fijo";
-            this.fijo.Size = new System.Drawing.Size(100, 20);
+            this.fijo.Size = new System.Drawing.Size(115, 20);
             this.fijo.TabIndex = 10;
             this.fijo.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -138,7 +140,7 @@
             // 
             this.celular.Location = new System.Drawing.Point(124, 120);
             this.celular.Name = "celular";
-            this.celular.Size = new System.Drawing.Size(100, 20);
+            this.celular.Size = new System.Drawing.Size(115, 20);
             this.celular.TabIndex = 11;
             this.celular.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -146,21 +148,31 @@
             // 
             this.contacto.Location = new System.Drawing.Point(124, 86);
             this.contacto.Name = "contacto";
-            this.contacto.Size = new System.Drawing.Size(100, 20);
+            this.contacto.Size = new System.Drawing.Size(115, 20);
             this.contacto.TabIndex = 12;
             // 
             // nombre
             // 
             this.nombre.Location = new System.Drawing.Point(124, 57);
             this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(100, 20);
+            this.nombre.Size = new System.Drawing.Size(115, 20);
             this.nombre.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(257, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Ej: 10, 20, 30 ...";
             // 
             // ProveedorAMFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(384, 261);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.nombre);
             this.Controls.Add(this.contacto);
             this.Controls.Add(this.celular);
@@ -196,5 +208,6 @@
         private System.Windows.Forms.TextBox celular;
         private System.Windows.Forms.TextBox contacto;
         private System.Windows.Forms.TextBox nombre;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.gridEmpleado = new System.Windows.Forms.DataGridView();
-            this.Cerrar = new System.Windows.Forms.Button();
             this.IdEmpleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreEmpleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,16 +47,7 @@
             this.gridEmpleado.Size = new System.Drawing.Size(381, 150);
             this.gridEmpleado.TabIndex = 0;
             this.gridEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridEmpleado_CellContentClick);
-            // 
-            // Cerrar
-            // 
-            this.Cerrar.Location = new System.Drawing.Point(329, 189);
-            this.Cerrar.Name = "Cerrar";
-            this.Cerrar.Size = new System.Drawing.Size(75, 23);
-            this.Cerrar.TabIndex = 1;
-            this.Cerrar.Text = "Cerrar";
-            this.Cerrar.UseVisualStyleBackColor = true;
-            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
+            this.gridEmpleado.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridEmpleado_CellDoubleClick);
             // 
             // IdEmpleado
             // 
@@ -73,6 +64,16 @@
             this.NombreEmpleado.HeaderText = "NombreEmpleado";
             this.NombreEmpleado.MinimumWidth = 15;
             this.NombreEmpleado.Name = "NombreEmpleado";
+            // 
+            // Cerrar
+            // 
+            this.Cerrar.Location = new System.Drawing.Point(329, 189);
+            this.Cerrar.Name = "Cerrar";
+            this.Cerrar.Size = new System.Drawing.Size(75, 23);
+            this.Cerrar.TabIndex = 1;
+            this.Cerrar.Text = "Cerrar";
+            this.Cerrar.UseVisualStyleBackColor = true;
+            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
             // 
             // EmpleadoResultsFrm
             // 

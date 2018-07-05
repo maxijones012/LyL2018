@@ -134,7 +134,8 @@ namespace WinNegocio.Formularios
 
         private void listadoToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            
+            ProductoResultsFrm frm = new ProductoResultsFrm();
+            frm.ResultadosProducto(0, null);
         }
 
         private void listadoToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -146,8 +147,21 @@ namespace WinNegocio.Formularios
 
         private void listadoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            ProveedorResultsFrm frm = new ProveedorResultsFrm();
-            frm.ResultadosProveedor(0, null);
+            ProductoResultsFrm frm = new ProductoResultsFrm();
+            frm.ResultadosProducto(0, null);
+
+        }
+
+        private void altaToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ProductoAMFrm frm = new ProductoAMFrm();
+            frm.NewProducto(null);
+        }
+
+        private void modificacionToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ProductoBusqFrm frm = new ProductoBusqFrm();
+            frm.Show();
         }
     }
 }

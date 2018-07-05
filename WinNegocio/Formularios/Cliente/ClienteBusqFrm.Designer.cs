@@ -70,6 +70,7 @@
             this.NombreCiaTxt.Name = "NombreCiaTxt";
             this.NombreCiaTxt.Size = new System.Drawing.Size(189, 20);
             this.NombreCiaTxt.TabIndex = 6;
+            this.NombreCiaTxt.TextChanged += new System.EventHandler(this.NombreCiaTxt_TextChanged);
             // 
             // NombreCiaChk
             // 

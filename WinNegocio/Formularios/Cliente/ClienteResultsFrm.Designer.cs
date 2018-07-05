@@ -32,7 +32,12 @@
             this.CerrarBtn = new System.Windows.Forms.Button();
             this.CedulaRuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Columna = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreContacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DirCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,12 +48,17 @@
             this.gridClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CedulaRuc,
             this.NombreCia,
-            this.Columna});
+            this.NombreContacto,
+            this.DirCliente,
+            this.Fax,
+            this.Email,
+            this.Celular,
+            this.Fijo});
             this.gridClientes.GridColor = System.Drawing.Color.Lime;
-            this.gridClientes.Location = new System.Drawing.Point(2, 12);
+            this.gridClientes.Location = new System.Drawing.Point(2, 2);
             this.gridClientes.Name = "gridClientes";
             this.gridClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridClientes.Size = new System.Drawing.Size(625, 316);
+            this.gridClientes.Size = new System.Drawing.Size(854, 310);
             this.gridClientes.TabIndex = 0;
             this.gridClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellContentClick_1);
             this.gridClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellDoubleClick);
@@ -56,7 +66,7 @@
             // 
             // CerrarBtn
             // 
-            this.CerrarBtn.Location = new System.Drawing.Point(498, 367);
+            this.CerrarBtn.Location = new System.Drawing.Point(540, 336);
             this.CerrarBtn.Name = "CerrarBtn";
             this.CerrarBtn.Size = new System.Drawing.Size(84, 27);
             this.CerrarBtn.TabIndex = 14;
@@ -72,22 +82,51 @@
             // 
             // NombreCia
             // 
-            this.NombreCia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.NombreCia.DataPropertyName = "NombreCia";
             this.NombreCia.HeaderText = "Nombre Cia";
             this.NombreCia.Name = "NombreCia";
             // 
-            // Columna
+            // NombreContacto
             // 
-            this.Columna.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Columna.HeaderText = "Columna";
-            this.Columna.Name = "Columna";
+            this.NombreContacto.DataPropertyName = "NombreContacto";
+            this.NombreContacto.HeaderText = "NombreContacto";
+            this.NombreContacto.Name = "NombreContacto";
+            // 
+            // DirCliente
+            // 
+            this.DirCliente.DataPropertyName = "DirCliente";
+            this.DirCliente.HeaderText = "Direccion";
+            this.DirCliente.Name = "DirCliente";
+            // 
+            // Fax
+            // 
+            this.Fax.DataPropertyName = "Fax";
+            this.Fax.HeaderText = "Fax";
+            this.Fax.Name = "Fax";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            // 
+            // Celular
+            // 
+            this.Celular.DataPropertyName = "Celular";
+            this.Celular.HeaderText = "Celular";
+            this.Celular.Name = "Celular";
+            // 
+            // Fijo
+            // 
+            this.Fijo.DataPropertyName = "Fijo";
+            this.Fijo.HeaderText = "Fijo";
+            this.Fijo.Name = "Fijo";
             // 
             // ClientesResultsFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 406);
+            this.ClientSize = new System.Drawing.Size(879, 382);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.gridClientes);
             this.MaximizeBox = false;
@@ -107,6 +146,11 @@
         private System.Windows.Forms.Button CerrarBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn CedulaRuc;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreCia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Columna;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreContacto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DirCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fax;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Celular;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fijo;
     }
 }

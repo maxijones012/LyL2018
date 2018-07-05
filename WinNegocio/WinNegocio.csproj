@@ -154,6 +154,24 @@
     <Compile Include="Formularios\PrincipalFrm.Designer.cs">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ProductoAMFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProductoAMFrm.designer.cs">
+      <DependentUpon>ProductoAMFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProductoBusqFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProductoBusqFrm.designer.cs">
+      <DependentUpon>ProductoBusqFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProductoResultsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProductoResultsFrm.designer.cs">
+      <DependentUpon>ProductoResultsFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ProveedorAMFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +234,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PrincipalFrm.resx">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProductoAMFrm.resx">
+      <DependentUpon>ProductoAMFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProductoBusqFrm.resx">
+      <DependentUpon>ProductoBusqFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProductoResultsFrm.resx">
+      <DependentUpon>ProductoResultsFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ProveedorAMFrm.resx">
       <DependentUpon>ProveedorAMFrm.cs</DependentUpon>

@@ -35,7 +35,7 @@ namespace WinNegocio.Formularios
             if (idProveedor != 0 && nombre == null)
             {
                 this.gridProveedor.AutoGenerateColumns = false;
-                List<Proveedor> lista = ManagerDB<Proveedor>.findAll(String.Format("Id Proveedor = '{0}'", IdProveedor));
+                List<Proveedor> lista = ManagerDB<Proveedor>.findAll(String.Format("Id Proveedor = '{0}'", idProveedor));
                 this.gridProveedor.DataSource = lista;
             }
 

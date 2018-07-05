@@ -59,7 +59,8 @@
             // 
             // CedulaRucTxt
             // 
-            this.CedulaRucTxt.Location = new System.Drawing.Point(102, 75);
+            this.CedulaRucTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CedulaRucTxt.Location = new System.Drawing.Point(102, 73);
             this.CedulaRucTxt.MaxLength = 10;
             this.CedulaRucTxt.Name = "CedulaRucTxt";
             this.CedulaRucTxt.Size = new System.Drawing.Size(143, 20);

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.gridProveedor = new System.Windows.Forms.DataGridView();
-            this.cerrar = new System.Windows.Forms.Button();
             this.IdProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridProveedor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,16 +47,6 @@
             this.gridProveedor.TabIndex = 0;
             this.gridProveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // cerrar
-            // 
-            this.cerrar.Location = new System.Drawing.Point(458, 226);
-            this.cerrar.Name = "cerrar";
-            this.cerrar.Size = new System.Drawing.Size(75, 23);
-            this.cerrar.TabIndex = 1;
-            this.cerrar.Text = "cerrar";
-            this.cerrar.UseVisualStyleBackColor = true;
-            this.cerrar.Click += new System.EventHandler(this.cerrar_Click);
-            // 
             // IdProveedor
             // 
             this.IdProveedor.DataPropertyName = "ProveedorId";
@@ -69,6 +59,16 @@
             this.Nombre.DataPropertyName = "NombreProveedor";
             this.Nombre.HeaderText = "Nombre Proveedor";
             this.Nombre.Name = "Nombre";
+            // 
+            // cerrar
+            // 
+            this.cerrar.Location = new System.Drawing.Point(458, 226);
+            this.cerrar.Name = "cerrar";
+            this.cerrar.Size = new System.Drawing.Size(75, 23);
+            this.cerrar.TabIndex = 1;
+            this.cerrar.Text = "Cerrar";
+            this.cerrar.UseVisualStyleBackColor = true;
+            this.cerrar.Click += new System.EventHandler(this.cerrar_Click);
             // 
             // ProveedorResultsFrm
             // 

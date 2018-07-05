@@ -34,13 +34,29 @@ namespace WinNegocio.Formularios
             
             string cedula_ruc = null;
             string nombre_cia = null;
+            int esNumero;
+
             if(!ListTodoChk.Checked && !this.CedulaRucChk.Checked && !this.NombreCiaChk.Checked )
             {
                 MessageBox.Show("Tiene que ingresar criterio de busqueda","Faltan criterios...",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                 return;
             }
 
-            
+            if (this.NombreCiaChk.Checked && this.NombreCiaTxt.Text == "") //Si no se ingreso nada.
+            {
+                MessageBox.Show("Debe ingresar un nombre o parte del nombre.", "Campo vacio", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (this.CedulaRucChk.Checked && this.CeulaRucTxt.Text == "") //Si no se ingreso nada.
+            {
+                MessageBox.Show("Debe ingresar numero de cedula.", "Campo Vacio", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (this.CedulaRucChk.Checked && !Int32.TryParse(this.CeulaRucTxt.Text, out esNumero)) //Si no se ingreso nada.
+            {
+                MessageBox.Show("Debe ingresar numeros.", "Faltan criterios...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }       
             
             //if (!ListTodoChk.Checked && this.CedulaRucChk.Checked)
                 //cedula_ruc = this.CeulaRucTxt.Text;
@@ -77,6 +93,11 @@ namespace WinNegocio.Formularios
         }
 
         private void CeulaRucTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NombreCiaTxt_TextChanged(object sender, EventArgs e)
         {
 
         }

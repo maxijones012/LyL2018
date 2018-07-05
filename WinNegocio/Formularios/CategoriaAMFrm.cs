@@ -74,6 +74,8 @@ namespace WinNegocio.Formularios
                 MessageBox.Show("Error al intentar " + (operacion == OperacionForm.frmAlta ? "ingresar nueva Categoia" : "actualizar informacion") + ex.Message, "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            if (_frmGrid != null)
+                _frmGrid.ReloadGrid();
             this.Dispose();
 
         }

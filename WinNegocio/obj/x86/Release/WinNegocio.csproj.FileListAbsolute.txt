@@ -57,3 +57,6 @@ C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL
 C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProveedorAMFrm.resources
 C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProveedorBusqFrm.resources
 C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProveedorResultsFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProductoAMFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProductoBusqFrm.resources
+C:\Users\Maxi\Desktop\UNIVERSIDAD\3° AÑO\LABORATORIO DE LENGUAJE\TRABAJO FINAL C#\winNegocios - VERSION AVANZADA\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProductoResultsFrm.resources

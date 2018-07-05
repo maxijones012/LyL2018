@@ -76,8 +76,6 @@ namespace WinNegocio.Formularios
         private void gridEmpleado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             EmpleadoAMFrm frm = new EmpleadoAMFrm();
-
-
             frm.ShowEmpleado((this.gridEmpleado.Rows[e.RowIndex].DataBoundItem as Empleado), this);
         }
 
