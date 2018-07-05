@@ -76,10 +76,8 @@ namespace WinNegocio.Formularios
 
         private void listadoToolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            OrdenAMFrm frm = new OrdenAMFrm();
-            Orden orden = new Orden();
-            orden.findbykey(204);
-            frm.ShowOrden(orden, null);
+            OrdenBusqFrm frm = new OrdenBusqFrm();
+            frm.ShowDialog();
         }
 
         private void altaToolStripMenuItem5_Click(object sender, EventArgs e)
@@ -162,6 +160,12 @@ namespace WinNegocio.Formularios
         {
             ProductoBusqFrm frm = new ProductoBusqFrm();
             frm.Show();
+        }
+
+        private void modificacionToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            OrdenBusqFrm frm = new OrdenBusqFrm();
+            frm.ShowDialog();
         }
     }
 }

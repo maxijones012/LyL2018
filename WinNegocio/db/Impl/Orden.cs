@@ -48,7 +48,15 @@ namespace LibNegocio.db
             this._empleado_id = Int32.Parse(dr[_columns[1]].ToString());
             this._cliente_id = Int32.Parse(dr[_columns[2]].ToString());
 			this._fecha_orden = DateTime.Parse(dr[_columns[3]].ToString());
-            this._descuento = Int32.Parse(dr[_columns[4]].ToString());            
+            //verifica nulo o vacio
+            if (String.IsNullOrEmpty(dr[_columns[4]].ToString()))
+            {
+                this._descuento = 0;
+            }
+            else {
+                this._descuento = Int32.Parse(dr[_columns[4]].ToString());
+            }
+            
             this.IsNew = false;
         }
         public string[] columns

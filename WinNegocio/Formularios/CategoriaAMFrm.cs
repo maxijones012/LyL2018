@@ -84,5 +84,10 @@ namespace WinNegocio.Formularios
         {
 
         }
+
+        private void NombreTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

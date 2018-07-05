@@ -11,14 +11,14 @@ namespace LibNegocio.db
         #region variables locales
         private int _orden_id;
         private int _empleado_id;
-		private int _cliente_id;
-		private DateTime _fecha_orden;     
-		private int _descuento;
-        
+        private int _cliente_id;
+        private DateTime _fecha_orden;
+        private int _descuento;
+
         #endregion
 
         #region propiedades publicas
-        
+
         public int OrdenId
         {
             get { return _orden_id; }
@@ -42,28 +42,72 @@ namespace LibNegocio.db
             get { return _fecha_orden; }
             set { _fecha_orden = value; }
         }
-        
-     		
-		public int Descuento
+
+
+        public int Descuento
         {
             get { return _descuento; }
             set { _descuento = value; }
         }
         private Empleado _empleado;
 
-        public Empleado EmpleadoObj
-        {
-            get { 
-                if(_empleado == null)
-                    _empleado = new Empleado();
-                _empleado.findbykey(this._empleado_id);
-                               
-                return _empleado; }
-            set { _empleado = value; }
-        }
-        
 
         #endregion
 
+        // Objeto Relacion con Empleado
+        public Empleado EmpleadoObj
+        {
+            get
+            {
+                if (this._empleado_id != 0 && this._empleado == null)
+                {
+                    _empleado = new Empleado();
+                    _empleado.findbykey(_empleado_id);
+                }
+                return _empleado;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    _empleado_id = 0;
+                }
+                else
+                {
+                    if (value.EmpleadoId != _empleado_id)
+                        _empleado_id = value.EmpleadoId;
+                }
+                _empleado = value;
+            }
+        }
+
+        private Cliente _cliente;
+
+        // Objeto Relacion con Cliente
+        public Cliente ClienteObj
+        {
+            get
+            {
+                if (this._cliente_id != 0 && this._cliente == null)
+                {
+                    _cliente = new Cliente();
+                    _cliente.findbykey(_cliente_id);
+                }
+                return _cliente;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    _cliente_id = 0;
+                }
+                else
+                {
+                    if (value.ClienteId != _cliente_id)
+                        _cliente_id = value.ClienteId;
+                }
+                _cliente = value;
+            }
+        }
     }
 }

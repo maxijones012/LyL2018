@@ -10,7 +10,7 @@ using LibNegocio.db;
 
 namespace WinNegocio.Formularios
 {
-    public partial class DetalleOrdenFrm : Form
+    public partial class DetalleOrdenFrm : Form, IFormGridReload
     {
         OperacionForm operacion = OperacionForm.frmConsulta;
         IFormGridReload _frmGrid;
@@ -23,6 +23,15 @@ namespace WinNegocio.Formularios
             get { return detalleOrden; }
             set { detalleOrden = value; }
         }
+
+        private int id_Detalle;
+
+        public int DetalleId
+        {
+            get { return id_Detalle; }
+            set { id_Detalle = value; }
+        }
+        
 
         private int _ordenId;
 
@@ -38,14 +47,16 @@ namespace WinNegocio.Formularios
             InitializeComponent();
         }
 
-        public void ShowOrden(DetalleOrden ordenIvk, IFormGridReload frmGrid)
+        public void ShowDetalleOrden(DetalleOrden ordenIvk, IFormGridReload frmGrid)
         {
             _frmGrid = frmGrid;
             this.operacion = OperacionForm.frmModificacion;
             this.Text = "Modificacion de informacion de orden";
             detalleOrden = ordenIvk;
             this.OrdenIdTxt.Text = detalleOrden.OrdenId.ToString();
-            this.ProductoCbo.SelectedItem = detalleOrden.ProductoId;
+            this.DetalleIdTxt.Text = detalleOrden.DetalleId.ToString(); 
+            this.ProductoCbo.SelectedItem = detalleOrden.ProductoObj;
+            this.cantidadTxt.Text = detalleOrden.Cantidad.ToString();
             this.detalleOrden.Cantidad = Convert.ToInt32(this.cantidadTxt.Text); 
 
             //cliente
@@ -57,18 +68,28 @@ this.DetallesOrden.DataSource = ManagerDB<DetalleOrden>.findAll("orden_id= " + o
             this.ShowDialog();
         }
 
-        public void NewDetalleOrden(IFormGridReload frmGrid)
+        public void NewDetalleOrden(IFormGridReload frmGrid, int OrdenId, int cantrenglones)
         {
             _frmGrid = frmGrid;
             this.Text = "Nuevo Detalle Orden";
             this.operacion = OperacionForm.frmAlta;
             this.ShowDialog();
+            cantrenglones++;
+            this.OrdenIdTxt.Text=OrdenIdTxt.Text.ToString();;
+            this.DetalleIdTxt.Text = cantrenglones.ToString();
+            
+
+;
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+
+  
 
         private void DetalleOrdencs_Load(object sender, EventArgs e)
         {
@@ -101,6 +122,9 @@ this.DetallesOrden.DataSource = ManagerDB<DetalleOrden>.findAll("orden_id= " + o
                 }
                 /* Comprobar que esten los datos obligatorios*/
                 detalleOrden.ProductoId = ((Producto)ProductoCbo.SelectedItem).ProductoId;
+                detalleOrden.ProductoId = this.DetalleId;
+                detalleOrden.OrdenId = this.OrdenId;
+
                 /*orden.EmpleadoId = ((Empleado)EmpleadoCbo.SelectedItem).EmpleadoId;
                 orden.FechaOrden = FechaOrdenDtp.Value;
                 orden.Descuento = Convert.ToInt32(this.DescuentoTxt.Text);*/
@@ -123,6 +147,18 @@ this.DetallesOrden.DataSource = ManagerDB<DetalleOrden>.findAll("orden_id= " + o
         private void OrdenIdTxt_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+
+        
+        private void ProductoCbo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void ReloadGrid()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -55,6 +55,7 @@
             // 
             // IdProductoTxt
             // 
+            this.IdProductoTxt.Enabled = false;
             this.IdProductoTxt.Location = new System.Drawing.Point(153, 19);
             this.IdProductoTxt.Name = "IdProductoTxt";
             this.IdProductoTxt.Size = new System.Drawing.Size(100, 20);
@@ -62,6 +63,7 @@
             // 
             // NombreProdTxt
             // 
+            this.NombreProdTxt.Enabled = false;
             this.NombreProdTxt.Location = new System.Drawing.Point(153, 61);
             this.NombreProdTxt.Name = "NombreProdTxt";
             this.NombreProdTxt.Size = new System.Drawing.Size(100, 20);
@@ -97,6 +99,7 @@
             this.IdProductocheck.TabIndex = 0;
             this.IdProductocheck.Text = "Identif. Producto:";
             this.IdProductocheck.UseVisualStyleBackColor = true;
+            this.IdProductocheck.CheckedChanged += new System.EventHandler(this.IdProductocheck_CheckedChanged);
             // 
             // BuscarBtn
             // 

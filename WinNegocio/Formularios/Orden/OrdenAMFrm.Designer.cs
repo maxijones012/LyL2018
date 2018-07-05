@@ -40,12 +40,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.AceptarBtn = new System.Windows.Forms.Button();
             this.CancelarBtn = new System.Windows.Forms.Button();
-            this.DetallesOrden = new System.Windows.Forms.DataGridView();
+            this.gridDetallesOrden = new System.Windows.Forms.DataGridView();
             this.Renglon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.detalle_producto = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DetallesOrden)).BeginInit();
+            this.AgregarDetalleBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDetallesOrden)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -141,7 +141,7 @@
             // 
             // AceptarBtn
             // 
-            this.AceptarBtn.Location = new System.Drawing.Point(142, 214);
+            this.AceptarBtn.Location = new System.Drawing.Point(129, 227);
             this.AceptarBtn.Name = "AceptarBtn";
             this.AceptarBtn.Size = new System.Drawing.Size(59, 24);
             this.AceptarBtn.TabIndex = 10;
@@ -151,7 +151,7 @@
             // 
             // CancelarBtn
             // 
-            this.CancelarBtn.Location = new System.Drawing.Point(219, 215);
+            this.CancelarBtn.Location = new System.Drawing.Point(216, 227);
             this.CancelarBtn.Name = "CancelarBtn";
             this.CancelarBtn.Size = new System.Drawing.Size(63, 22);
             this.CancelarBtn.TabIndex = 11;
@@ -159,18 +159,20 @@
             this.CancelarBtn.UseVisualStyleBackColor = true;
             this.CancelarBtn.Click += new System.EventHandler(this.CancelarBtn_Click);
             // 
-            // DetallesOrden
+            // gridDetallesOrden
             // 
-            this.DetallesOrden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DetallesOrden.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridDetallesOrden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridDetallesOrden.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Renglon,
             this.Producto,
             this.Cantidad});
-            this.DetallesOrden.Location = new System.Drawing.Point(323, 15);
-            this.DetallesOrden.Name = "DetallesOrden";
-            this.DetallesOrden.Size = new System.Drawing.Size(344, 185);
-            this.DetallesOrden.TabIndex = 12;
-            this.DetallesOrden.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.DetallesOrden_DataBindingComplete);
+            this.gridDetallesOrden.Location = new System.Drawing.Point(323, 15);
+            this.gridDetallesOrden.Name = "gridDetallesOrden";
+            this.gridDetallesOrden.Size = new System.Drawing.Size(344, 185);
+            this.gridDetallesOrden.TabIndex = 12;
+            this.gridDetallesOrden.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DetallesOrden_CellContentClick);
+            this.gridDetallesOrden.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDetallesOrden_CellDoubleClick);
+            this.gridDetallesOrden.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.DetallesOrden_DataBindingComplete);
             // 
             // Renglon
             // 
@@ -189,23 +191,23 @@
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
             // 
-            // detalle_producto
+            // AgregarDetalleBtn
             // 
-            this.detalle_producto.Location = new System.Drawing.Point(545, 229);
-            this.detalle_producto.Name = "detalle_producto";
-            this.detalle_producto.Size = new System.Drawing.Size(106, 23);
-            this.detalle_producto.TabIndex = 13;
-            this.detalle_producto.Text = "Agregar Prodcuto";
-            this.detalle_producto.UseVisualStyleBackColor = true;
-            this.detalle_producto.Click += new System.EventHandler(this.button1_Click);
+            this.AgregarDetalleBtn.Location = new System.Drawing.Point(545, 229);
+            this.AgregarDetalleBtn.Name = "AgregarDetalleBtn";
+            this.AgregarDetalleBtn.Size = new System.Drawing.Size(106, 23);
+            this.AgregarDetalleBtn.TabIndex = 13;
+            this.AgregarDetalleBtn.Text = "Agregar Detalle";
+            this.AgregarDetalleBtn.UseVisualStyleBackColor = true;
+            this.AgregarDetalleBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // OrdenAMFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 304);
-            this.Controls.Add(this.detalle_producto);
-            this.Controls.Add(this.DetallesOrden);
+            this.Controls.Add(this.AgregarDetalleBtn);
+            this.Controls.Add(this.gridDetallesOrden);
             this.Controls.Add(this.CancelarBtn);
             this.Controls.Add(this.AceptarBtn);
             this.Controls.Add(this.label5);
@@ -221,7 +223,7 @@
             this.Name = "OrdenAMFrm";
             this.Text = "OrdenAMFrm";
             this.Load += new System.EventHandler(this.OrdenAMFrm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DetallesOrden)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDetallesOrden)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,10 +243,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button AceptarBtn;
         private System.Windows.Forms.Button CancelarBtn;
-        private System.Windows.Forms.DataGridView DetallesOrden;
+        private System.Windows.Forms.DataGridView gridDetallesOrden;
         private System.Windows.Forms.DataGridViewTextBoxColumn Renglon;
         private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.Button detalle_producto;
+        private System.Windows.Forms.Button AgregarDetalleBtn;
     }
 }

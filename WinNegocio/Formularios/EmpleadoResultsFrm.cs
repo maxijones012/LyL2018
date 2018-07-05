@@ -78,5 +78,22 @@ namespace WinNegocio.Formularios
         {
             this.Dispose();
         }
+
+        private void gridEmpleado_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            Empleado em;
+            Empleado rem;
+
+            foreach (var item in this.gridEmpleado.Rows)
+            {
+                em = (item as DataGridViewRow).DataBoundItem as Empleado;
+                if (em.ReportaA != 0)
+                {
+                    rem = em.ReportaEmpleadoObj;
+                    (item as DataGridViewRow).Cells[3].Value = rem.Nombre + " " + rem.Apellido;
+
+                }
+            }
+        }
     }
 }

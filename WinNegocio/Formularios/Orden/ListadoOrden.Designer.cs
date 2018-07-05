@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.Columna = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gridClientes = new System.Windows.Forms.DataGridView();
+            this.gridOrden = new System.Windows.Forms.DataGridView();
             this.CedulaRuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CerrarBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridOrden)).BeginInit();
             this.SuspendLayout();
             // 
             // Columna
@@ -41,19 +41,19 @@
             this.Columna.HeaderText = "Columna";
             this.Columna.Name = "Columna";
             // 
-            // gridClientes
+            // gridOrden
             // 
-            this.gridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridOrden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridOrden.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CedulaRuc,
             this.NombreCia,
             this.Columna});
-            this.gridClientes.Location = new System.Drawing.Point(-2, 1);
-            this.gridClientes.Name = "gridClientes";
-            this.gridClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridClientes.Size = new System.Drawing.Size(625, 316);
-            this.gridClientes.TabIndex = 15;
-            this.gridClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellContentClick);
+            this.gridOrden.Location = new System.Drawing.Point(-2, 1);
+            this.gridOrden.Name = "gridOrden";
+            this.gridOrden.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridOrden.Size = new System.Drawing.Size(625, 316);
+            this.gridOrden.TabIndex = 15;
+            this.gridOrden.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellContentClick);
             // 
             // CedulaRuc
             // 
@@ -81,11 +81,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 402);
-            this.Controls.Add(this.gridClientes);
+            this.Controls.Add(this.gridOrden);
             this.Controls.Add(this.CerrarBtn);
             this.Name = "ListadoOrden";
             this.Text = "ListadoOrden";
-            ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridOrden)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -93,7 +93,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridViewTextBoxColumn Columna;
-        private System.Windows.Forms.DataGridView gridClientes;
+        private System.Windows.Forms.DataGridView gridOrden;
         private System.Windows.Forms.DataGridViewTextBoxColumn CedulaRuc;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreCia;
         private System.Windows.Forms.Button CerrarBtn;

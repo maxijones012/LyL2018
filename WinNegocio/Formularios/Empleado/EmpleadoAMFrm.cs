@@ -26,17 +26,17 @@ namespace WinNegocio.Formularios
             InitializeComponent();
         }
 
-        public void ShowEmpleado(Empleado em, IFormGridReload frmGrid)
+        public void ShowEmpleado(Empleado empleado, IFormGridReload frmGrid)
         {
             _frmGrid = frmGrid;
             this.operacion = OperacionFormEmpleado.frmModificacion;
             this.Text = "Modificacion de informacion de Empleado";
-            em = emp;
+            emp = empleado;
             this.IdMsk.Enabled = false;
            // this.EmpleadoIdTxt = Convert.ToInt32(em.EmpleadoId);
-            this.NombreTxt.Text = em.Nombre;
-            this.fechaEmpleadoDte.Value = em.FechaNac;
-            this.Reporta_aCbo.SelectedItem = em.EmpleadoId;
+            this.NombreTxt.Text = emp.Nombre;
+            this.fechaEmpleadoDte.Value = emp.FechaNac;
+            this.Reporta_aCbo.SelectedItem = emp.EmpleadoId;
   
             this.ShowDialog();
         }

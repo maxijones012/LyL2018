@@ -46,8 +46,18 @@ namespace LibNegocio.db
             this._nombre = dr[_columns[1]].ToString().Trim();
             this._apellido = dr[_columns[2]].ToString().Trim();
             this._fecha_nac = DateTime.Parse(dr[_columns[3]].ToString());
-			if(dr[_columns[4]]!=DBNull.Value)
-                this._extension = Int32.Parse(dr[_columns[4]].ToString());
+            if (dr[_columns[4]] != DBNull.Value) {
+                if (dr[_columns[4]].ToString() == "")
+                {
+                    this._reporta_a = 0;
+                }
+                else
+                {
+                    this._extension = Int32.Parse(dr[_columns[4]].ToString());
+                }
+            }
+            //    this._extension = Int32.Parse(dr[_columns[4]].ToString());
+            
             this.IsNew = false;
         }
         public string[] columns
@@ -61,7 +71,7 @@ namespace LibNegocio.db
                                 (this.IsNew?"":_columns[1] + "=")+String.Format("'{0}'",this._nombre), //formato cadena ''
                                 (this.IsNew?"":_columns[2] + "=")+String.Format("'{0}'",this._apellido),//formato cadena ''
                                 (this.IsNew?"":_columns[3] + "=")+String.Format("'{0}'",this._fecha_nac.ToString("yyyy-MM-dd")), //formato cadena ''
-                                (this.IsNew?"":_columns[4] + "=")+(this._reporta_a.ToString()),
+                                 (this.IsNew?"":_columns[4] + "=")+(this._reporta_a!=0?this._reporta_a.ToString():"null"),
                                 (this.IsNew?"":_columns[5] + "=")+(this._extension.ToString())
                               };
             return values;

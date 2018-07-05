@@ -10,11 +10,12 @@ using LibNegocio.db;
 
 namespace WinNegocio.Formularios
 {
-    public partial class OrdenAMFrm : Form
+    public partial class OrdenAMFrm : Form, IFormGridReload
     {
         OperacionForm operacion = OperacionForm.frmConsulta;
         IFormGridReload _frmGrid;
         Orden orden;
+        DetalleOrden detalle_orden;
         public OrdenAMFrm()
         {
             InitializeComponent();
@@ -28,10 +29,11 @@ namespace WinNegocio.Formularios
             this.OrdenIdTxt.Text = orden.OrdenId.ToString();
             this.EmpleadoCbo.SelectedItem = orden.EmpleadoObj;
             //cliente
+            this.ClienteCbo.SelectedItem = orden.ClienteObj;
             this.FechaOrdenDtp.Value = orden.FechaOrden;
             this.DescuentoTxt.Text = orden.Descuento.ToString();
-            this.DetallesOrden.AutoGenerateColumns = false;
-            this.DetallesOrden.DataSource = ManagerDB<DetalleOrden>.findAll("orden_id= " + orden.OrdenId.ToString()); 
+            this.gridDetallesOrden.AutoGenerateColumns = false;
+            this.gridDetallesOrden.DataSource = ManagerDB<DetalleOrden>.findAll("orden_id= " + orden.OrdenId.ToString()); 
 
             this.ShowDialog();
         }
@@ -43,7 +45,9 @@ namespace WinNegocio.Formularios
             this.ShowDialog();
         }
 
-
+        public void ReloadGrid() {
+            this.gridDetallesOrden.Refresh();
+        }
 
         private void OrdenAMFrm_Load(object sender, EventArgs e)
         {
@@ -75,7 +79,10 @@ namespace WinNegocio.Formularios
                 {
                     MessageBox.Show(operacion == OperacionForm.frmAlta ? "Error al intentar ingresar nueva Orden" : "Error al intentar editar informacion de Cliente", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
+
                 }
+                if (this.operacion == OperacionForm.frmAlta)
+                    this.AgregarDetalleBtn.Enabled = true;
                 MessageBox.Show(operacion == OperacionForm.frmAlta ? "Nueva Orden  dado de alta" : "Actualizacion de informacion de Orden", operacion == OperacionForm.frmAlta ? "Ingreso de Orden..." : "Actualizacion de informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -89,22 +96,25 @@ namespace WinNegocio.Formularios
 
         private void DetallesOrden_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            foreach (DataGridViewRow item in this.DetallesOrden.Rows)
+            DetalleOrden deto = new DetalleOrden();
+
+            foreach (DataGridViewRow item in this.gridDetallesOrden.Rows)
             {
-                item.Cells[1].Value = (item.DataBoundItem as DetalleOrden).ProductoObj.Descripcion;
+
+                //item.Cells[1].Value = (item.DataBoundItem as DetalleOrden).ProductoObj.Descripcion;
+
+                deto = (item.DataBoundItem as DetalleOrden);
+                //item.Cells[0].Value = deto.OrdenObj.OrdenId;
+                //item.Cells[0].Value = deto.DetalleId;
+                item.Cells[1].Value = deto.ProductoObj.Descripcion;
+                //item.Cells[2].Value = deto.Cantidad;
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (this.orden != null){
-
-                DetalleOrdenFrm detalle_producto = new DetalleOrdenFrm();
-                detalle_producto.OrdenId = Convert.ToInt32(this.orden.OrdenId);
-                detalle_producto.Show();
-                
-            }
+            DetalleOrdenAMFrm detfrm = new DetalleOrdenAMFrm();
+            detfrm.NewDetalleOrden(this, this.orden.OrdenId, gridDetallesOrden.Rows.Count);
             
             
         }
@@ -122,6 +132,22 @@ namespace WinNegocio.Formularios
         private void ClienteCbo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void DetallesOrden_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
+        private void gridDetallesOrden_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DetalleOrdenFrm detfrm = new DetalleOrdenFrm();
+            detfrm.ShowDetalleOrden((gridDetallesOrden.Rows[e.RowIndex].DataBoundItem as DetalleOrden), this);
+        }
+        void IFormGridReload.ReloadGrid()
+        {
+            this.gridDetallesOrden.DataSource = ManagerDB<DetalleOrden>.findAll("orden_id= " + orden.OrdenId.ToString()); 
         }
     }
 }

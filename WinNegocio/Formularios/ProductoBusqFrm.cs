@@ -87,7 +87,23 @@ namespace WinNegocio.Formularios
 
         private void NombreProdcheck_CheckedChanged(object sender, EventArgs e)
         {
+            this.NombreProdTxt.Enabled = this.NombreProdcheck.Enabled;
+            if (this.NombreProdcheck.Checked)
+            {
+                this.ListTodocheck.Checked = false;
+                this.NombreProdcheck.Focus();
+            }
+        }
 
+        private void IdProductocheck_CheckedChanged(object sender, EventArgs e)
+        {
+            this.IdProductoTxt.Enabled = this.IdProductocheck.Checked;
+            if (this.IdProductocheck.Checked)
+            {
+                this.ListTodocheck.Checked = false;
+                this.IdProductocheck.Focus();
+
+            }
         }
     }
 }
