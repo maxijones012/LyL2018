@@ -68,11 +68,6 @@ namespace WinNegocio.Formularios
             this.gridEmpleado.Refresh();
         }
 
-        private void gridEmpleado_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void gridEmpleado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             EmpleadoAMFrm frm = new EmpleadoAMFrm();

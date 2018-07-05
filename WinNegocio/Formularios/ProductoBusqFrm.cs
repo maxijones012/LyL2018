@@ -32,11 +32,29 @@ namespace WinNegocio.Formularios
 
             int idProducto = 0;
             string NombreProd = null;
+            int esNumero;
+
             if (!ListTodocheck.Checked && !this.IdProductocheck.Checked && !this.NombreProdcheck.Checked)
             {
                 MessageBox.Show("Tiene que ingresar criterio de busqueda", "Faltan criterios...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+
+            if (this.NombreProdcheck.Checked && this.NombreProdTxt.Text == "")
+            {
+                MessageBox.Show("Debe ingresar el nombre o parte del nombre.", "Campo vacio", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else {
+
+                if (this.NombreProdcheck.Checked && Int32.TryParse(this.NombreProdTxt.Text, out esNumero))
+                {
+                    MessageBox.Show("Solo se pueden ingresar caracteres.", "Valores incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            
+            }
+
             if (!ListTodocheck.Checked && this.IdProductocheck.Checked)
                 idProducto = Convert.ToInt32(this.IdProductoTxt.Text);
             NombreProd = NombreProdTxt.Text;

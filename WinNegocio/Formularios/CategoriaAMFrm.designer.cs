@@ -63,7 +63,7 @@
             this.IdMsk.Mask = "999999999";
             this.IdMsk.Name = "IdMsk";
             this.IdMsk.ReadOnly = true;
-            this.IdMsk.Size = new System.Drawing.Size(106, 20);
+            this.IdMsk.Size = new System.Drawing.Size(143, 20);
             this.IdMsk.TabIndex = 22;
             // 
             // NombreTxt
@@ -87,11 +87,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 38);
+            this.label1.Location = new System.Drawing.Point(27, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 13);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Id";
+            this.label1.Text = "Identif. Categoria:";
             // 
             // CategoriaAMFrm
             // 

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.gridClientes = new System.Windows.Forms.DataGridView();
-            this.CerrarBtn = new System.Windows.Forms.Button();
             this.CedulaRuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreContacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,6 +37,8 @@
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CerrarBtn = new System.Windows.Forms.Button();
+            this.info = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,16 +64,6 @@
             this.gridClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellContentClick_1);
             this.gridClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellDoubleClick);
             this.gridClientes.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridClientes_DataBindingComplete_1);
-            // 
-            // CerrarBtn
-            // 
-            this.CerrarBtn.Location = new System.Drawing.Point(540, 336);
-            this.CerrarBtn.Name = "CerrarBtn";
-            this.CerrarBtn.Size = new System.Drawing.Size(84, 27);
-            this.CerrarBtn.TabIndex = 14;
-            this.CerrarBtn.Text = "Cerrar";
-            this.CerrarBtn.UseVisualStyleBackColor = true;
-            this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
             // 
             // CedulaRuc
             // 
@@ -122,11 +113,31 @@
             this.Fijo.HeaderText = "Fijo";
             this.Fijo.Name = "Fijo";
             // 
+            // CerrarBtn
+            // 
+            this.CerrarBtn.Location = new System.Drawing.Point(540, 336);
+            this.CerrarBtn.Name = "CerrarBtn";
+            this.CerrarBtn.Size = new System.Drawing.Size(84, 27);
+            this.CerrarBtn.TabIndex = 14;
+            this.CerrarBtn.Text = "Cerrar";
+            this.CerrarBtn.UseVisualStyleBackColor = true;
+            this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
+            // 
+            // info
+            // 
+            this.info.AutoSize = true;
+            this.info.Location = new System.Drawing.Point(144, 325);
+            this.info.Name = "info";
+            this.info.Size = new System.Drawing.Size(282, 13);
+            this.info.TabIndex = 15;
+            this.info.Text = "Para modificar un cliente, haga doble click sobre el campo";
+            // 
             // ClientesResultsFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 382);
+            this.Controls.Add(this.info);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.gridClientes);
             this.MaximizeBox = false;
@@ -137,6 +148,7 @@
             this.Load += new System.EventHandler(this.ClientesResultsFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -152,5 +164,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Celular;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fijo;
+        private System.Windows.Forms.Label info;
     }
 }

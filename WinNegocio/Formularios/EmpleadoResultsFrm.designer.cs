@@ -41,12 +41,13 @@
             this.gridEmpleado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdEmpleado,
             this.NombreEmpleado});
+            this.gridEmpleado.GridColor = System.Drawing.Color.Lime;
             this.gridEmpleado.Location = new System.Drawing.Point(12, 12);
             this.gridEmpleado.Name = "gridEmpleado";
             this.gridEmpleado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridEmpleado.Size = new System.Drawing.Size(381, 150);
             this.gridEmpleado.TabIndex = 0;
-            this.gridEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridEmpleado_CellContentClick);
+            this.gridEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridEmpleado_CellDoubleClick);
             this.gridEmpleado.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridEmpleado_CellDoubleClick);
             // 
             // IdEmpleado
@@ -82,6 +83,7 @@
             this.ClientSize = new System.Drawing.Size(430, 221);
             this.Controls.Add(this.Cerrar);
             this.Controls.Add(this.gridEmpleado);
+            this.Location = new System.Drawing.Point(144, 325);
             this.Name = "EmpleadoResultsFrm";
             this.Text = "EmpleadoResultsFrm";
             this.Load += new System.EventHandler(this.EmpleadoResultsFrm_Load);
